@@ -1,0 +1,146 @@
+{
+    "ui": {
+        "labels": {
+            "about": "About",
+            "timeline": "Timeline",
+            "works": "Works",
+            "contact": "Contact",
+            "enteryourmessage": "Enter your message",
+            "current": "current"
+        }
+    },
+    "top": {
+        "firstView": {
+            "first": "My name is",
+            "second": "I'm a",
+            "third": "Web Developper"
+        },
+        "about": {
+            "nationality": "Nationality",
+            "residence": "Residence",
+            "germany": "Germany",
+            "summary": "Full-Stack Web Developer with 11 years experience since 2012. From 2019, I have started working as a freelance web developer based in Berlin. I mainly focus on company websites but I also have a motivation to challenge another genre. React JS/Next JS, Wordpress/PHP/Javascript, HTML/CSS can be used. I can speak German, English and Japanese.",
+            "skills": "Skills",
+            "years": "years",
+            "year": "year",
+            "apr10": "Apr 2010 - Mar 2012",
+            "apr06": "Apr 2006 - Mar 2010"
+        },
+        "timeline": {
+            "current": {
+                "title": "Web Developer",
+                "category": "Freelancer",
+                "description": "In Germany, I am a freelance web developer and I now belong to several freelance teams, one is in Japan and another is in Berlin. Main focuses are development of websites with ReactJS improvement and customisation of existing websites with Wordpress, or Wordpress template from scratch. Of course I would like to challenge more other developments."
+            },
+            "by18": {
+                "title": "Web Developer",
+                "category": "Freelancer",
+                "description": "Front-end and back-end developer (fullstack) in Japan. During this period, I have used different programming language for each project, not only for websites but also management system, as well as Javascript, Python, with corresponding framework of NodeJS, CreateJS, Flask, etc."
+            },
+            "by15": {
+                "title": "Web Director assistant",
+                "category": "teamLab",
+                "description": "To understand and acquire all the professional workflows I had worked at teamLab for companies in immobility, automotive, creative industries."
+            },
+            "by13": {
+                "title": "Web Developer",
+                "category": "Freelancer",
+                "description": "In the beginning of freelancing I took short-term projects from start-up companies for gaming industry, social projects, and website for professor etc."
+            }
+        },
+        "works": {
+            "summary": "I basically work for company websites. Here are some recent works of my development projects. I so far developed websites with Wordpress with original/customized template. And I recently work with React/Next.js and it is exciting to me for coding/programming. Please check them out for the detail pages."
+        },
+        "footer": {
+            "moreinfo": "More Info",
+            "contact": "Contact",
+            "send": "Send Message"
+        }
+    },
+    "portfolio": {
+        "labels": {
+            "CustomerName": "Customer name",
+            "Role": "Role",
+            "Tools": "Tools",
+            "Release": "Release",
+            "Overview": "Overview",
+            "Points": "Points",
+            "Details": "Details",
+            "ToSite": "To website",
+            "ToTopPage": "Back to top page"
+        },
+        "THECOMPANY": {
+            "CompanyName": "THECOMPANY",
+            "Role": "Web Developer",
+            "Tools": "React.js, Next.js, Strapi, Swiper",
+            "Release": "",
+            "Summary": "THECOMPANY is a dance agency based in Berlin to develop and train dance talent to produce superior dance paformances and content. This client has collaborated with other artists and brands, and also holds workshop events and classes. Our team by three members, director, designer and developer(me), has created a very sophisticated designs with a lot of animation effects, 'Apple-like' UI and video contents to show the creativity of this client and to attract more persons who want to train dance here, find a talent in this agency, and/or collaborate with THECOMPANY. I realized everything as much as highly possible by using React/Next.js to perform it as an interactive and high-quality website.",
+            "Link": "http://217.160.29.234:3000/",
+            "Points": {
+                "first": "Creative animations and parallax effects and also a sentence tracking animation with IntersectionObserver.",
+                "second": "Connected with Shopify-API to provide a shopping experience with interactive sliders.",
+                "third": "Apple like UI design on icons of dancers with interactive sliders managed by a headless CMS (Strapi).",
+                "fourth": "Using a lot of videos in this website with vimeo API managed by Strapi."
+            },
+            "Details": [{
+                "text": "By using IntersectionObserver, I developed such parallax effects in the picture, especially 'sentence tracking effect' was an interesing challenge.",
+                "imgPath": ""
+                }, {
+                "text": "With Shopify-API, you can buy event tickets, and the payment system was used for its shopify system. In this animation GIF, it was not shown but drop down list should also be interactive to change an event in a regular series. From small to big, all events are synchronized with shopified and we focused on better usability.",
+                "imgPath": ""
+                }, {
+                "text": "Apple-Like intuitive icons which scaled not only mouseovered icon but also the both side of it, which looks like a desktop icons in Macbook. And the contents are also interactive to show the profile of dancers and their detailed information. We tried to make it high quality of its presence. This is managed by a headless CMS named Strapi.",
+                "imgPath": ""
+                }, {
+                "text": "I use React/Next.js because it is really necessary to use a lot of components and they should be fast to show up on the website and because this site uses a lot of videos. To reduce its burden of loading behaviour, we use Vimeo API and Strapi and it results that the loading speed is better than we expected.",
+                "imgPath": ""
+            }]
+        },
+        "BrandingCeed": {
+            "CompanyName": "Branding C°",
+            "Role": "Web Developer",
+            "Tools": "Wordpress",
+            "Release": "January 23rd, 2023",
+            "Summary": "Branding C°(Ceed) is a branding company to provide services of consulting, brand development, create CI and VI, Human Resource development for branding, designing strategy etc. The output should be not only websites, but also wide range of branding development. Ceed is a combination of Celsius and Seed, which indicates that they develop other companies' brand from a phase of seed (beginning) with good temperature (Celsius) to make it gradually higher like to grow plants. Their philosophy is to let the brand of companies (clients) growing together like to grow plants.",
+            "Link": "https://branding-ceed.com/",
+            "Points": {
+                "first": "Interactive animation effects with its company's philosophy.",
+                "second": "Intuitive UI with the help of mouse stalker function to go to next and previous contents.",
+                "third": "Customized Wordpress template to make it easier and faster but keep its quality of design."
+            },
+            "Details": [{
+                "text": "The company name, Branding C°(Ceed), of C°(Ceed) is a combination of Celsius and Seed, which indicates that they develop other companies' brand from a phase of seed (beginning) with good temperature (Celsius) to make it gradually higher like to grow plants. So the website color is based with green and in some contents, the gradation changes slowly to explain 'growing of plants'. We developed this website to realize and take care for the philosophy of this company as much as possible.",
+                "imgPath": "../../img/portfolio/BrandingCeed/1.gif"
+                }, {
+                "text": "Not using arrows on slider but using a mouse over effect to let users click to next and previous contents. This is a challenging design to realize both sophisticated design and intuitive action without arrows. Mouse stalker effects achieve this goal for the wish of client.",
+                "imgPath": "../../img/portfolio/BrandingCeed/2.gif"
+                }, {
+                "text": "This website is based on a wordpress theme named jstork19 to make website manageable for client. The animation of first view is originally customized (not default), which means that we use this template with prepared functions minimally and based on them, we realized the design.",
+                "imgPath": "../../img/portfolio/BrandingCeed/3.png"
+            }]
+        },
+        "WakutoRecruit": {
+            "CompanyName": "Wakuto",
+            "Role": "Web Developer",
+            "Tools": "Wordpress",
+            "Release": "December 1st, 2022",
+            "Summary": "Wakuto is an IT company to design and develop web based services (web applications, websites etc.) in Japan. Our team, by 3 members (director, designer, developer(me)), created a recruit page for this company with interactive and creative ideas in design. My role was to develop and realize the design to achieve the goal of CTA (apply for job) and keep its flexible interaction in responsive design.",
+            "Link": "https://wakuto.net/recruit/",
+            "Points": {
+                "first": "Trying to make applicants attractive in the first view.",
+                "second": "Interactive effects in each element by adding 'playfullness'.",
+                "third": "Creative road map in order to let applicants understand about this company and to lead them to CTA from start (introduction) to end (door picture to apply for the job)."
+            },
+            "Details": [{
+                "text": "With sliders, 'heart beating' animation, fade in effects... everything tried to make person attention to lead to CTA for applying the jobs.",
+                "imgPath": "../../img/portfolio/WakutoRecruit/1.gif"
+                }, {
+                "text": "On mouse over effects with mouse stalker, we have tried to make almost every element interactive. The company name 'Wakuto' is stand with 'Wakuwaku (playfullness)' and 'to (together)', which implies: 'let's make things playfullness together'. So that such effects do really matter for this company. We realized the motto of it.",
+                "imgPath": "../../img/portfolio/WakutoRecruit/2.gif"
+                }, {
+                "text": "As the picture shows that this whole page paves the way to the door, which leads to the application form. This concept is really loved by this customer and we had struggled to apply for each device size as the responsive design as much as possible.",
+                "imgPath": "../../img/portfolio/WakutoRecruit/3.gif"
+            }]
+        }
+    }
+}

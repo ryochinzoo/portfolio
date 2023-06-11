@@ -1,0 +1,56 @@
+.aboutContentsWrapper {
+    margin: 50px 5%;
+    color: #707070;
+}
+
+.aboutOverview {
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+.profilWrapper {
+    line-height: 1.5;
+}
+.aboutSkillEduFlexWrapper {
+    margin-top: 80px;
+    display: flex;
+    gap: 0 80px;
+}
+.subContentsWrapper {
+    width: 50%;
+}
+.profileSummary {
+    margin-top: 50px;
+    line-height: 1.5;
+}
+.subHeadlineWrapper {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+.subHeadline {
+    font-size: 48px;
+    font-weight: 900;
+    margin-left: 20px;
+}
+.subHeadlineIcon {
+    height: 80px;
+    object-fit: contain;
+}
+.list {
+    line-height: 1.8;
+    margin-top: 30px;
+    opacity: 0;
+}
+.listedContents {
+    font-size: 24px;
+}
+.educationWrapper {
+    margin-top: 30px;
+    line-height: 1.6;
+    opacity: 0;
+}
+.boldTitle {
+    font-weight: 700;
+    font-size: 24px;
+}

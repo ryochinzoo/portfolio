@@ -1,0 +1,146 @@
+{
+    "ui": {
+        "labels": {
+            "about": "Über mich",
+            "timeline": "Zeitleiste",
+            "works": "Werke",
+            "contact": "Kontakt",
+            "enteryourmessage": "Ihre Nachricht eingeben",
+            "current": "jetzt"
+        }
+    },
+    "top": {
+        "firstView": {
+            "first": "Mein Name ist",
+            "second": "ich bin ein",
+            "third": "Web Entwickler"
+        },
+        "about": {
+            "nationality": "Nationalität",
+            "residence": "Wohnort",
+            "germany": "Deutschland",
+            "summary": "Full-Stack Webentwickler mit 11 Jahren Erfahrung seit 2012. Ab 2019 bin ich als freiberuflicher Webentwickler mit Sitz in Berlin tätig. Ich konzentriere mich hauptsächlich auf Firmenwebseiten, bin aber auch motiviert, mich einem anderen Genre zu stellen. React JS/Next JS, Wordpress/PHP/Javascript, HTML/CSS können eingesetzt werden. Ich spreche Deutsch, Englisch und Japanisch.",
+            "skills": "Fährigkeiten",
+            "years": "Jahre",
+            "year": "Jahr",
+            "apr10": "Apr 2010 - März 2012",
+            "apr06": "Apr 2006 - März 2010"
+        },
+        "timeline": {
+            "current": {
+                "title": "Web Entwickler",
+                "category": "Freiberufler",
+                "description": "In Deutschland bin ich freiberuflicher Webentwickler und gehöre mittlerweile mehreren freiberuflichen Teams an, eines davon in Japan und eines in Berlin. Schwerpunkte sind die Entwicklung von Websites mit ReactJS, Verbesserung und Anpassung von bestehenden Websites mit Wordpress, oder Wordpress Template von Grund auf. Natürlich würde ich mich auch gerne anderen Entwicklungen stellen."
+            },
+            "by18": {
+                "title": "Web Entwickler",
+                "category": "Freiberufler",
+                "description": "Front-End- und Back-End-Entwickler (Fullstack) in Japan. Während dieser Zeit habe ich für jedes Projekt eine andere Programmiersprache verwendet, nicht nur für Websites, sondern auch für Verwaltungssysteme, sowie Javascript, Python, mit dem entsprechenden Framework von NodeJS, CreateJS, Flask usw."
+            },
+            "by15": {
+                "title": "Assistenz von Web Direktor",
+                "category": "teamLab",
+                "description": "Um alle professionellen Arbeitsabläufe zu verstehen und zu erlernen, habe ich bei teamLab für Unternehmen aus der Mobilitäts-, Automobil- und Kreativbranche gearbeitet."
+            },
+            "by13": {
+                "title": "Web Entwickler",
+                "category": "Freiberufler",
+                "description": "Zu Beginn meiner Freiberuflichkeit habe ich kurzfristige Projekte von Start-up-Unternehmen für die Spieleindustrie, soziale Projekte und Websites für Professoren usw. übernommen."
+            }
+        },
+        "works": {
+            "summary": "Ich arbeite hauptsächlich für Unternehmenswebsites. Hier sind einige aktuelle Arbeiten von meinen Entwicklungsprojekten. Bisher habe ich Websites mit Wordpress mit originellen/angepassten Vorlagen entwickelt. Und seit kurzem arbeite ich mit React/Next.js und es ist spannend für mich zu kodieren/programmieren. Bitte sehen Sie sich die Detailseiten an."
+        },
+        "footer": {
+            "moreinfo": "Mehr schauen",
+            "contact": "Kontakt",
+            "send": "Nachricht Senden"
+        }
+    },
+    "portfolio": {
+        "labels": {
+            "CustomerName": "Kundenname",
+            "Role": "Teamrolle",
+            "Tools": "Tools",
+            "Release": "Veröffentlichung",
+            "Overview": "Übersicht",
+            "Points": "Hauptpunkte",
+            "Details": "Einzelheiten",
+            "ToSite": "Zur Webseite",
+            "ToTopPage": "Zurück zur Startseite"
+        },
+        "THECOMPANY": {
+            "CompanyName": "THECOMPANY",
+            "Role": "Web Entwickler",
+            "Tools": "React.js, Next.js, Strapi, Swiper",
+            "Release": "",
+            "Summary": "THECOMPANY ist eine Tanzagentur mit Sitz in Berlin, die Tanztalente entwickelt und ausbildet, um anspruchsvolle Tanzperformances und Inhalte zu produzieren. Dieser Kunde hat mit anderen Künstlern und Marken zusammengearbeitet und hält auch Workshops und Kurse ab. Unser dreiköpfiges Team, bestehend aus Direktor, Designer und Entwickler (ich), hat ein sehr anspruchsvolles Design mit vielen Animations-Effekten, 'Apple-like' UI und Video-Inhalten erstellt, um die Kreativität dieses Kunden zu zeigen und mehr Personen anzuziehen, die hier Tanz trainieren, ein Talent in dieser Agentur finden und/oder mit THECOMPANY zusammenarbeiten wollen. Ich habe alles so weit wie möglich mit React/Next.js realisiert, um es als interaktive und qualitativ hochwertige Website darzustellen.",
+            "Link": "http://217.160.29.234:3000/",
+            "Points": {
+                "first": "Kreative Animationen und Parallax-Effekte sowie eine Satzverfolgungsanimation mit IntersectionObserver",
+                "second": "Verbunden mit Shopify-API, um ein Einkaufserlebnis mit interaktiven Schiebereglern zu bieten.",
+                "third": "Apple-ähnliches UI-Design auf Icons von Tänzern mit interaktiven Schiebereglern, die von einem Headless CMS (Strapi) verwaltet werden.",
+                "fourth": "Verwendung vieler Videos auf dieser Website mit der von Strapi verwalteten Vimeo-API."
+            },
+            "Details": [{
+                "text": "Durch die Verwendung von IntersectionObserver habe ich solche Parallaxen-Effekte im Bild entwickelt, insbesondere der 'Satzverfolgungseffekt' war eine interessante Herausforderung.",
+                "imgPath": ""
+                }, {
+                "text": "Mit der Shopify-API können Sie Veranstaltungstickets kaufen, und das Zahlungssystem wurde für das Shopify-System verwendet. In dieser Animation GIF, war es nicht gezeigt, aber Dropdown-Liste sollte auch interaktiv sein, um eine Veranstaltung in einer regelmäßigen Serie zu ändern. Von klein bis groß sind alle Events mit shopified synchronisiert und wir haben uns auf eine bessere Usability konzentriert.",
+                "imgPath": ""
+                }, {
+                "text": "Apple-ähnliche, intuitive Icons, die nicht nur das mausgroße Icon skalieren, sondern auch die beiden Seiten davon, was wie ein Desktop-Icon im Macbook aussieht. Und die Inhalte sind auch interaktiv, um das Profil der Tänzer und ihre detaillierten Informationen zu zeigen. Wir haben versucht, eine hohe Qualität der Präsenz zu erreichen. Dies wird von einem Headless CMS namens Strapi verwaltet.",
+                "imgPath": ""
+                }, {
+                "text": "Ich verwende React/Next.js, weil es wirklich notwendig ist, eine Menge Komponenten zu verwenden und diese schnell auf der Website angezeigt werden sollten, und weil diese Website viele Videos verwendet. Um die Last des Ladeverhaltens zu reduzieren, verwenden wir die Vimeo API und Strapi und das Ergebnis ist, dass die Ladegeschwindigkeit besser ist als wir erwartet haben.",
+                "imgPath": ""
+            }]
+        },
+        "BrandingCeed": {
+            "CompanyName": "Branding C°",
+            "Role": "Web Entwickler",
+            "Tools": "Wordpress",
+            "Release": "23.Januar 2023",
+            "Summary": "Branding C°(Ceed) ist ein Branding-Unternehmen, das Dienstleistungen wie Beratung, Markenentwicklung, Erstellung von CI und VI, Personalentwicklung für Branding, Designstrategie usw. anbietet. Der Output sollte nicht nur Websites, sondern auch eine breite Palette von Branding-Entwicklung sein. Ceed ist eine Kombination aus Celsius und Seed ('Samen'), was darauf hindeutet, dass sie die Marke anderer Unternehmen von einer Phase des Samens (Anfang) mit guter Temperatur (Celsius) entwickeln, um sie allmählich höher wachsen zu lassen, so wie Pflanzen wachsen. Ihre Philosophie ist es, die Marken von Unternehmen (Kunden) zusammen wachsen zu lassen, so wie Pflanzen wachsen",
+            "Link": "https://branding-ceed.com/",
+            "Points": {
+                "first":  "Interaktive Animationseffekte mit der Philosophie des Unternehmens",
+                "second": "Intuitive Benutzeroberfläche mit Hilfe der Mausstalker-Funktion, um zum nächsten und vorherigen Inhalt zu gelangen.",
+                "third": "Angepasste Wordpress-Vorlage, um es einfacher und schneller zu machen, aber die Qualität des Designs zu erhalten."
+            },
+            "Details": [{
+                "text": "Der Firmenname, Branding C°(Ceed), von C°(Ceed) ist eine Kombination aus Celsius und Seed, was darauf hindeutet, dass sie die Marke anderer Unternehmen von einer Phase der Saat (Anfang) mit guter Temperatur (Celsius) entwickeln, um sie allmählich höher wie Pflanzen wachsen zu lassen. Die Farbe der Website basiert also auf Grün und in einigen Inhalten ändert sich die Abstufung langsam, um das 'Wachsen von Pflanzen' zu erklären. Wir haben diese Website entwickelt, um die Philosophie dieses Unternehmens so weit wie möglich zu verwirklichen und zu pflegen.",
+                "imgPath": "../../img/portfolio/BrandingCeed/1.gif"
+                }, {
+                "text": "Keine Pfeile auf dem Schieberegler, sondern ein Mouse-Over-Effekt, der es dem Benutzer ermöglicht, zum nächsten und vorherigen Inhalt zu klicken. Dies ist eine Herausforderung, um sowohl ein anspruchsvolles Design als auch eine intuitive Bedienung ohne Pfeile zu realisieren. Mouse Stalker Effekte erreichen dieses Ziel auf Wunsch des Kunden.",
+                "imgPath": "../../img/portfolio/BrandingCeed/2.gif"
+                }, {
+                "text": "Diese Website basiert auf einem Wordpress-Theme namens jstork19, um die Website für den Kunden handhabbar zu machen. Die Animation der ersten Ansicht ist ursprünglich angepasst (nicht standardmäßig), was bedeutet, dass wir diese Vorlage mit vorbereiteten Funktionen minimal verwenden und darauf basierend das Design realisiert haben.",
+                "imgPath": "../../img/portfolio/BrandingCeed/3.png"
+            }]
+        },
+        "WakutoRecruit": {
+            "CompanyName": "Wakuto",
+            "Role": "Web Entwickler",
+            "Tools": "Wordpress",
+            "Release": "01.Dezember 2022",
+            "Summary": "Wakuto ist ein IT-Unternehmen, das webbasierte Dienste (Webanwendungen, Websites usw.) in Japan entwirft und entwickelt. Unser Team, bestehend aus 3 Mitgliedern (Direktor, Designer, Entwickler (ich)), hat für dieses Unternehmen eine Rekrutierungsseite mit interaktiven und kreativen Designideen erstellt. Meine Aufgabe war es, das Design zu entwickeln und zu realisieren, um das Ziel der CTA (Bewerbung) zu erreichen und die flexible Interaktion im responsiven Design zu erhalten.",
+            "Link": "https://wakuto.net/recruit/",
+            "Points": {
+                "first": "Versucht, Bewerber in der ersten Ansicht attraktiv zu machen",
+                "second": "Interaktive Effekte in jedem Element durch Hinzufügen von 'Verspieltheit'.",
+                "third": "Kreative Roadmap, um den Bewerbern das Unternehmen näher zu bringen und sie vom Anfang (Einführung) bis zum Ende (Türbild für die Bewerbung) zum CTA zu führen."
+            },
+            "Details": [{
+                "text": "Mit Schiebereglern, 'Herzschlag'-Animation, Einblendeffekten... alles versucht, die Aufmerksamkeit der Person zu erregen, um sie zum CTA für die Bewerbung zu führen.",
+                "imgPath": "../../img/portfolio/WakutoRecruit/1.gif"
+                }, {
+                "text": "Bei Mouse-Over-Effekten mit Mouse Stalker haben wir versucht, fast jedes Element interaktiv zu gestalten. Der Firmenname 'Wakuto' steht für 'Wakuwaku (Verspieltheit)' und 'to (zusammen)', was impliziert: 'Lasst uns die Dinge gemeinsam spielerisch gestalten'. Solche Effekte sind also für dieses Unternehmen wirklich wichtig. Wir haben das Motto umgesetzt.",
+                "imgPath": "../../img/portfolio/WakutoRecruit/2.gif"
+                }, {
+                "text": "Wie das Bild zeigt, ebnet diese ganze Seite den Weg zur Tür, die zum Bewerbungsformular führt. Dieses Konzept wird von diesem Kunden wirklich geliebt und wir hatten uns bemüht, für jede Gerätegröße das responsive Design so weit wie möglich anzuwenden.",
+                "imgPath": "../../img/portfolio/WakutoRecruit/3.gif"
+            }]
+        }
+    }
+}

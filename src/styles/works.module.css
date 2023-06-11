@@ -1,0 +1,21 @@
+.summary {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.linksWrapper {
+    margin: 80px 0 20px;
+    line-height: 1.6;
+}
+
+.linkname {
+    font-size: 120px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+    transition: .4s;
+}
+
+.linkname:hover {
+    color: #484392;
+}

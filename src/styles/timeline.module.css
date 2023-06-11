@@ -1,0 +1,76 @@
+.timelineWrapper {
+    width: 100%;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.timelineFlexWrapper {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.timelineFlexWrapperReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.backgroundGreen {
+    color: #fff;
+    background-color: #94B840;
+    position: relative;
+}
+
+.timelineFlexWrapper .backgroundGreen {
+    transform: translateX(-100%);
+    transition-duration: .8s;
+}
+.timelineFlexWrapperReverse .backgroundGreen {
+    transform: translateX(100%);
+    transition-duration: .8s;
+}
+
+.timelineParts {
+    width: 50%;
+    min-height: 530px;
+    position: relative;
+}
+
+.timelineYears {
+    position: absolute;
+    font-size: 48px;
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-delay: .8s;
+    transition-duration: .3s;
+    opacity: 0;
+}
+.timelineHeadline {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.timelineTitle {
+    font-size: 24px;
+}
+
+.timelineDescription {
+    font-size: 24px;
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+.descriptionWrapper {
+    position: absolute;
+    width: 80%;
+    color: #707070;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-delay: .8s;
+    transition-duration: .3s;
+    opacity: 0;
+}

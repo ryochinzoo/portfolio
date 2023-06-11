@@ -1,0 +1,151 @@
+.mainTitle {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 80px;
+    color: #94B840;
+    font-weight: 900;
+    transform: translateX(-50%);
+}
+.overViewWrapper {
+    padding: 40px 8% 0;
+}
+.overViewFlexWrapper {
+    display: flex;
+    margin-bottom: 40px;
+}
+.overViewHeading {
+    font-size: 36px;
+    font-weight: 900;
+    color: #53A9CF;
+}
+.overViewDetail {
+    font-size: 32px;
+    font-weight: 400;
+    color: #707070;
+}
+.overViewSummary {
+    font-size: 24px;
+    font-weight: 400;
+    color: #707070;
+}
+.overViewContents {
+    width: 50%;
+}
+.pointSection ul {
+    padding: 40px 8% 0;
+}
+.pointSection ul li {
+    line-height: 1.4;
+    margin-bottom: 20px;
+    list-style: none;
+}
+.pointListWrapper {
+    display: flex;
+    color: #707070;
+    font-size: 32px;
+    font-weight: 400;
+    gap: 0 60px;
+    align-items: center;
+}
+.check {
+    color: #53A9CF;
+    font-size: 80px;
+    font-weight: 900;
+}
+.VWIdescription {
+    padding: 0 5%;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.viewImageButton {
+    background-color: #fff;
+    color: #484392;
+    padding: 20px 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    font-weight: bold;
+    font-family: 'Nexa';
+    font-size: 32px;
+    border: 1px solid #484392;
+    cursor: pointer;
+    margin-top: 60px;
+    margin-left: 5%;
+    display: block;
+	overflow: hidden;
+	transition: .3s;
+	z-index: 1;
+    width: 350px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+.viewImageButton:hover {
+    color:#fff;
+    border-color: #484392;
+}
+.viewImageButton::before {
+	content: "";
+	width: 120%;
+	height: 200%;
+	position: absolute;
+	top: -50%;
+	right: 0;
+	z-index: -1;
+	background: #484392;
+	border-radius: 0 100% 100% 0;
+	transform: translateX(-100%);
+	transition: transform ease .3s;
+}
+.viewImageButton:hover::before {
+	transform: translateX(10%);
+}
+.detailWrapper {
+    padding: 0 5%;
+}
+.detailFlexWrapper {
+    padding: 0 8%;
+    display: flex;
+    gap: 0 2%;
+}
+.detailFlexWrapperReverse {
+    padding: 0 8%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0 2%;
+}
+.detailFlexWrapper div, .detailFlexWrapperReverse div {
+    width: 50%;
+    margin: 24px 0 12px;
+}
+.detailImg {
+    position: relative;
+}
+.detailImg img {
+    width: 95%;
+    object-fit: contain;
+    max-height: 600px;
+}
+.detailText{
+    font-size: 24px;
+    color: #707070;
+}
+.backToTopPage {
+    margin: 10px 5% 0 0;
+    text-align: right;
+    font-weight: 700;
+    font-size: 20px;
+    color: #484392;
+}
+.goToPage {
+    margin: 10px 5% 0 0;
+    text-align: right;
+    font-weight: 700;
+    font-size: 20px;
+    color: #484392;
+}
+
+.backToTopPage:hover {
+    opacity: 0.7;
+}

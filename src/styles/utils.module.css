@@ -1,0 +1,467 @@
+.posRelative {
+    position: relative;
+}
+.bkfull {
+    width: 100vw;
+    height: 100vh;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+}
+.loader img {
+    animation: spin 2s forwards;
+    -webkit-animation: spin 2s forwards;
+    transform-origin: calc(100% * 291.6 / 580.9) calc(100% *  303.0 / 561.3);
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    10% {
+        transform: rotate(15deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+}
+
+.fadeUp {
+    animation-name: fadeUp;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.headlineAfter {
+    animation-name: slideInFromLeft;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideInFromLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    } 
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }   
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }   
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }   
+    to {
+        opacity: 1;
+    }   
+}
+.animation01 {
+    animation-delay: 0.2s;
+}
+.animation02 {
+    animation-delay: 0.6s;
+}
+.animation03 {
+    animation-delay: 1s;
+}
+.animation04 {
+    animation-delay: 1.6s;
+}
+.animation05 {
+    animation-delay: 2s;
+}
+.iconsLeft {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+}
+.iconCenter {
+    position: relative;
+    display: inline-block;
+}
+.iconsWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    width: auto;
+}
+
+.iconsWrapper img {
+    width: auto;
+    height: 65px;
+    object-fit: contain;
+}
+.colorBlue {
+    color: #53A9CF;
+}
+.colorGreen {
+    color: #94B840;
+}
+.sectionWrapper {
+    margin: 180px 5% 0;
+}
+.sectionWrapperSub {
+    margin: 90px 0;
+}
+.sectionWrapperSubGreen {
+    padding-bottom: 90px;
+}
+.sectionWrapperWorks {
+    padding: 90px 5%;
+}
+.contentsHeadline {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: left;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition-duration: 1.5s;
+}
+.contentsHeadlineSub {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: left;
+    opacity: 1;
+    transition-duration: 1.5s;
+    padding-left: 5%;
+}
+.contentsHeadlineSubGreen {
+    font-size: 62px;
+    font-weight: 900;
+    text-align: left;
+    opacity: 1;
+    transition-duration: 1.5s;
+    padding: 40px 5% 10px;
+}
+.contentsHeadlineCenter {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.parallax {
+    min-height: 500px;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-image: url(../img/asa_pattern.png);
+    z-index: -1;
+}
+.parallaxSmall {
+    min-height: 200px;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-image: url(../img/asa_pattern.png);
+    z-index: -1;
+}
+.backgroundGreen {
+    color: #fff;
+    background-color: #94B840;
+    position: relative;
+}
+header {
+    position: relative;
+}
+.mainMenuIconArea {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    z-index: 8;
+    cursor: pointer;
+}
+.mainMenuIconArea .burgerMenuIcon {
+    color: #484392;
+    width: 35px;
+    height: 4px;
+    background: currentColor;
+    position: relative;
+    left: 0px;
+    top: 15px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+.mainMenuIconArea .burgerMenuIcon:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width:  100%;
+    height: 100%;
+    background: currentColor;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+  }
+  .mainMenuIconArea .burgerMenuIcon:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width:  100%;
+    height: 100%;
+    background: currentColor;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+.languageWrapper {
+    position: fixed;
+    display: flex;
+    font-weight: 400;
+    top: 34px;
+    right: 90px;
+    gap: 0 15px;
+    z-index: 1199;
+    color: #484392;
+    font-size: 20px;
+}
+.languageWrapper span {
+    cursor: pointer;
+}
+.languageWrapper span:hover {
+    opacity: 0.5;
+}
+.languageWrapper span.languageNotActive {
+    padding: 0;
+    margin: 0;
+    display: block;
+    line-height: 0.75;
+}
+.languageWrapper span.languageActive {
+    border-bottom: 1px solid #484392;
+    padding: 0;
+    margin: 0;
+    display: block;
+    line-height: 0.75;
+}
+.footerWrapper {
+    margin: 160px 0 100px;
+}
+.footerContents {
+    text-align: center;
+    margin: 80px auto 0;
+    position: relative;
+}
+.contactFormWrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+.inputText {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #707070;
+    padding: 0px 10px;
+    margin-bottom: 0;
+    height: 66px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #979797;
+    font-size: 18px;
+    font-family: 'Noto Sans'!important;
+}
+
+.inputTextArea {
+    width: 100%;
+    min-height: 225px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    padding: 20px 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    color: #979797;
+    font-size: 18px;
+    font-family: 'Noto Sans'!important;
+}
+
+.submitButton {
+    background-color: #fff;
+    color: #484392;
+    padding: 16px 47px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    font-weight: bold;
+    font-family: 'Nexa';
+    font-size: 17px;
+    border-color: #484392;
+    border-width: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+	overflow: hidden;
+	transition: .3s;
+	z-index: 1;
+	position: relative;
+}
+.submitButton:disabled, .submitButton:disabled:hover {
+    background-color: #777;
+    color: #fff;
+    border: 1px solid #777;
+}
+.submitButton:disabled:hover::before {
+    transform: translateX(-100%)
+}
+.anchorButton {
+    background-color: transparent;
+    color: #484392;
+    font-weight: 800;
+    font-family: 'Nexa';
+    font-size: 28px;
+    cursor: pointer;
+    display: block;
+	overflow: hidden;
+	transition: .3s;
+	z-index: 1;
+    width: 100%;
+    text-align: left;
+    text-decoration: underline;
+}
+.subMenu {
+    background-color: transparent;
+    color: #484392;
+    font-weight: 800;
+    font-family: 'Nexa';
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+	overflow: hidden;
+	transition: .3s;
+	z-index: 1;
+    width: 100%;
+    text-align: left;
+    text-decoration: underline;
+}
+.contactAnchorButton {
+    background-color: transparent;
+    color: #484392;
+    padding: 10px 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    font-weight: bold;
+    font-family: 'Nexa';
+    font-size: 17px;
+    border: 1px solid #484392;
+    cursor: pointer;
+    top: 20px;
+    right: 185px;
+    display: block;
+	overflow: hidden;
+	transition: .3s;
+	z-index: 1;
+	position: fixed;
+    width: 120px;
+    height: 22px;
+    text-align: center;
+    text-decoration: none;
+}
+.contactAnchorButton:hover, .submitButton:hover {
+    color:#fff;
+    border-color: #484392;
+}
+.contactAnchorButton::before, .submitButton::before {
+	content: "";
+	width: 120%;
+	height: 200%;
+	position: absolute;
+	top: -50%;
+	right: 0;
+	z-index: -1;
+	background: #484392;
+	border-radius: 0 100% 100% 0;
+	transform: translateX(-100%);
+	transition: transform ease .3s;
+}
+.contactAnchorButton:hover::before, .submitButton:hover::before {
+	transform: translateX(10%);
+}
+
+.copyright {
+    margin-bottom: 12px;
+    text-align: center;
+}
+.tooltip {
+    opacity: 0;
+    position: absolute;
+    z-index: 101;
+    margin-left: 30px;
+    transition-duration: .3s;
+}
+.tooltip img {
+    max-width: 250px;
+}
+
+.menuWrapper {
+    width: 100%;
+    height: 25vh;
+    background: #fff;
+    position: relative;
+}
+.menuWrapper ul, .menuWrapper ul li ul {
+    list-style-type: none;
+    line-height: 1;
+    padding-inline-start: 10px!important;
+}
+.menuWrapper ul li, .menuWrapper ul li ul li {
+    padding-bottom: 10px;
+}
+.menuWrapper ul li ul {
+    padding-top: 10px;
+}
+.menuFlexWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.drawerCloseButton {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    top: 5%;
+    right: 0;
+}
+.drawerCloseButton::before, .drawerCloseButton::after{
+    content: "";
+    display: block;
+    width: 70%;
+    height: 3px;
+    background: #707070;
+    transform: rotate(45deg);
+    transform-origin: 0% 50%;
+    position: absolute;
+    top: calc(14% + 3px);
+    left: 25%;
+}
+.drawerCloseButton::after{
+    transform: rotate(-45deg);
+    transform-origin: 100% 50%;
+    left: auto;
+    right: 25%;
+}
