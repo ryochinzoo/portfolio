@@ -1,5 +1,7 @@
 import { animated } from 'react-spring'
 import { useMouseStalker } from './useMouseStalker'
+import { useMediaQuery } from 'react-responsive'
+
 
 const initMouse =  {
         width: 16,
@@ -23,17 +25,24 @@ const cssStyles = {
 }
 
 function MouseStalker () {
+    const isDesktop = useMediaQuery({
+        query: '(min-width: 1024px)'
+    })
     const springStyles = useMouseStalker(initMouse, springConfig, 5)
-    return (
-        <>
-            <animated.div
-                style={{
-                    ...cssStyles,
-                    ...springStyles,
-                }}
-            />
-        </>
-    )
+    if (isDesktop) {
+        return (
+            <>
+                <animated.div
+                    style={{
+                        ...cssStyles,
+                        ...springStyles,
+                    }}
+                />
+            </>
+        )
+    } else {
+        return (<></>)
+    }
 } 
 
 export default MouseStalker

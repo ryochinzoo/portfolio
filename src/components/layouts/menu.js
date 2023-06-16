@@ -15,9 +15,9 @@ function Menu({handleIsOpen, t}) {
                     <li><HashLink onClick={() => {handleIsOpen(false)}} className={`mouseOverEfct ${utilStyles.anchorButton}`} to="/#timeline">{t("ui.labels.timeline")}</HashLink></li>
                     <li><HashLink onClick={() => {handleIsOpen(false)}} className={`mouseOverEfct ${utilStyles.anchorButton}`} to={"/#works"}>{t("ui.labels.works")}</HashLink>
                         <ul>
-                            <li><Link className={`mouseOverEfct ${utilStyles.subMenu}`} to={"/portfolio/THECOMPANY"}>THECOMPANY</Link></li>
-                            <li><Link className={`mouseOverEfct ${utilStyles.subMenu}`} to={"/portfolio/BrandingCeed"}>Branding C°</Link></li>
-                            <li><Link className={`mouseOverEfct ${utilStyles.subMenu}`} to={"/portfolio/WakutoRecruit"}>Wakuto - Recruit</Link></li>
+                            <li><Link onClick={() => {handleIsOpen(false)}} className={`mouseOverEfct ${utilStyles.subMenu}`} to={"/portfolio/THECOMPANY"}>THECOMPANY</Link></li>
+                            <li><Link onClick={() => {handleIsOpen(false)}} className={`mouseOverEfct ${utilStyles.subMenu}`} to={"/portfolio/BrandingCeed"}>Branding C°</Link></li>
+                            <li><Link onClick={() => {handleIsOpen(false)}} className={`mouseOverEfct ${utilStyles.subMenu}`} to={"/portfolio/WakutoRecruit"}>Wakuto - Recruit</Link></li>
                         </ul>
                     </li>
                     <li><a className={`mouseOverEfct ${utilStyles.anchorButton}`} onClick={() => {handleIsOpen(false)}} href={"#footer"}>{t("ui.labels.contact")}</a></li>

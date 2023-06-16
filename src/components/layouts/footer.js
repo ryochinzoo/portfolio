@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { init, send } from 'emailjs-com'
 import { withNamespaces } from 'react-i18next'
 
-function Footer({ t }) {
+function Footer({ t, currentLocale }) {
     const userID = process.env.REACT_APP_USER_ID
     const serviceID = process.env.REACT_APP_SERVICE_ID
     const templateID = process.env.REACT_APP_TEMPLATE_ID
@@ -195,7 +195,7 @@ function Footer({ t }) {
                 <div className={`${utilStyles.footerContents}`}>
                     <div className={`${utilStyles.contentsHeadlineCenter} ${utilStyles.colorGreen}`}>{t("top.footer.moreinfo")}</div>  
                     <div className={`${utilStyles.iconCenter}`}>
-                        <Icons />
+                        <Icons currentLocale={currentLocale}/>
                     </div>
                 </div>
                 <div className={`${utilStyles.footerContents}`}>

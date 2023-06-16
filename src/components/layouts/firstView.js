@@ -5,7 +5,7 @@ import Icons from "../ui/icons"
 import KikkouPattern from "../../svg/pattern-kikkou.svg"
 import { withNamespaces } from 'react-i18next'
 
-function FirstView ({ t }) {
+function FirstView ({ t, currentLocale }) {
     return(
         <section className={`${utilStyles.posRelative} ${firstViewStyle.firstViewSize}`}>
             <div className={`${firstViewStyle.headlines}`}>
@@ -20,7 +20,7 @@ function FirstView ({ t }) {
                 <img className={`${firstViewStyle.fvSVGHeight}`} alt="firstViewMainImage" src={KikkouPattern} />
             </div>
             <div className={`${utilStyles.iconsLeft} ${utilStyles.animation05} ${utilStyles.fadeIn}`}>
-                <Icons />
+                <Icons currentLocale={currentLocale}/>
             </div>
         </section>
     )

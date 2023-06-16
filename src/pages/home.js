@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react' //useState, useEffect, useRef
+import React, { Component, useState, useEffect } from 'react' //useState, useEffect, useRef
 import FirstView from '../components/layouts/firstView'
 import About from '../components/layouts/about'
 import Timeline from '../components/layouts/timeline'
@@ -11,6 +11,8 @@ import i18n from '../components/functions/i18n'
 import Header from '../components/layouts/header'
 import { withNamespaces } from 'react-i18next'
 import ScrollToHashElement from '../components/functions/scrollToHashElement'
+import { useLocation } from 'react-router-dom'
+import ReactGA from "react-ga4"
 
 const Home = () => {
     return <Sections />
@@ -18,18 +20,26 @@ const Home = () => {
 
 function Content() {
     const [locale, setLocale] = useState(i18n.language)
-
+    const location = useLocation()
+    const GA4ID = process.env.REACT_APP_GA4ID
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng)
         setLocale(lng)
     }
-    
+    useEffect(() => {
+        document.title = "Ryohei Hara"
+        ReactGA.initialize(GA4ID)
+        ReactGA.send({
+          hitType: "pageview",
+          page: location.pathname + location.search
+        })
+    }, [location, GA4ID])
     return (
         <>
             <ScrollToHashElement />
             <MouseStalker />
             <Header changeLanguage={changeLanguage} locale={locale} aniPos={5} />
-            <FirstView />
+            <FirstView currentLocale={locale}/>
             <span id="about"></span>
             <About />
             <div id="timeline">
@@ -38,7 +48,7 @@ function Content() {
             <span id="works"></span>
             <Works />
             <div id="footer">
-                <Footer />
+                <Footer currentLocale={locale} />
             </div>
         </>
     )

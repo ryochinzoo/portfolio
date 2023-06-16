@@ -54,3 +54,22 @@
     font-weight: 700;
     font-size: 24px;
 }
+@media screen and (max-width: 767px) {
+    .aboutOverview {
+        font-size: 18px;
+        opacity: 0;
+        transition: opacity 0.8s;
+    }
+    .aboutSkillEduFlexWrapper {
+        margin-top: 80px;
+        display: flex;
+        gap: 40px 0;
+        flex-direction: column;
+    }
+    .subContentsWrapper {
+        width: 100%;
+    }
+    .subHeadline {
+        font-size: 36px;
+    }
+}

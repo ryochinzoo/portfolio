@@ -4,18 +4,23 @@ import ToolTip from './tooltip'
 import { useRef } from "react"
 import utilStyles from "../../styles/utils.module.css"
 import i18n from '../functions/i18n'
+import { useMediaQuery } from 'react-responsive'
 
 function WorksLink({name, link, dataSet, tooltipImgPath}) {
     const ref = useRef()
+    
+    const isDesktop = useMediaQuery({
+        query: '(min-width: 1024px)'
+    })
     const handleMouseEnter = () => {
-        if (!ref.current) return
+        if (!ref.current || !isDesktop) return
         ref.current.children[1].style.opacity = "1"
         ref.current.children[1].style.visibility = "visible"
         ref.current.children[1].style.translationDuration = ".2s"
     }
 
     const handleMouseLeave = () => {
-        if (!ref.current) return
+        if (!ref.current || !isDesktop) return
         ref.current.children[1].style.opacity = "0"
         ref.current.children[1].style.visibility = "hidden"
         ref.current.children[1].style.translationDuration = ".2s"

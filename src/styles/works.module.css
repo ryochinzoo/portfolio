@@ -19,3 +19,21 @@
 .linkname:hover {
     color: #484392;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .linkname {
+        font-size: 70px;
+    }
+    .summary {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .linkname {
+        font-size: 50px;
+    }
+    .summary {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}

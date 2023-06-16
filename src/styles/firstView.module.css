@@ -4,6 +4,7 @@
     bottom: 0;
     z-index: 0;
     max-width: 75%;
+    overflow: hidden;
 }
 
 .firstViewSize {
@@ -26,7 +27,7 @@
 }
 .headlineFvSmall {
     font-size: 48px;
-    font-size: 300;
+    font-weight: 300;
     color: #707070;
 }
 .headlineBig {
@@ -34,4 +35,14 @@
     font-weight: 900;
     color: #94B840;
     line-height: 1.1;
+}
+@media screen and (max-width: 767px) {
+    .headlineBig {
+        font-size: 60px;
+    }
+    .headlineFvSmall {
+        font-size: 28px;
+        font-weight: 300;
+        color: #707070;
+    }
 }

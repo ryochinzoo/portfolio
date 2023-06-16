@@ -1,10 +1,10 @@
-import React, { Component, useState } from 'react'
+import React, { Component, useState, useEffect } from 'react'
 import Spinner from '../ui/spinner'
 import ParallaxArea from './parallaxArea'
 import Footer from './footer'
 import utilStyles from "../../styles/utils.module.css"
 import portfolioStyles from "../../styles/portfolio.module.css"
-import { useParams, useNavigate, Link } from "react-router-dom"
+import { useParams, useLocation, useNavigate, Link } from "react-router-dom"
 import PointList from '../ui/pointList'
 import MouseStalker from '../functions/mouseStalker'
 import WorksImage from '../ui/worksImage'
@@ -13,20 +13,8 @@ import Header from './header'
 import JsonData_en from "../../locales/en/common.json"
 import JsonData_de from "../../locales/de/common.json"
 
-import TheCompanyImg1 from '../../img/portfolio/THECOMPANY/1.gif'
-import TheCompanyImg2 from '../../img/portfolio/THECOMPANY/2.gif'
-import TheCompanyImg3 from '../../img/portfolio/THECOMPANY/3.gif'
-import TheCompanyImg4 from '../../img/portfolio/THECOMPANY/4.gif'
-
-import BrandingCeedImg1 from '../../img/portfolio/BrandingCeed/1.gif'
-import BrandingCeedImg2 from '../../img/portfolio/BrandingCeed/2.gif'
-import BrandingCeedImg3 from '../../img/portfolio/BrandingCeed/3.png'
-
-import WakutoImg1 from '../../img/portfolio/WakutoRecruit/1.gif'
-import WakutoImg2 from '../../img/portfolio/WakutoRecruit/2.gif'
-import WakutoImg3 from '../../img/portfolio/WakutoRecruit/3.png'
-
 import i18n from '../../components/functions/i18n'
+import ReactGA from "react-ga4"
 
 const Portfolio = (props) => {
     let { work } = useParams()
@@ -78,6 +66,18 @@ function Content({ work }) {
 
     const pointList = pointArray(portfolio.data.Points)
     const details = portfolio.data.Details
+    const location = useLocation()
+    const GA4ID = process.env.REACT_APP_GA4ID
+    
+    useEffect(() => {
+        document.title = "Ryohei Hara"
+        ReactGA.initialize(GA4ID)
+        ReactGA.send({
+          hitType: "pageview",
+          page: location.pathname + location.search
+        })
+    }, [location, GA4ID])
+
     return (
         <>  
             <MouseStalker />
@@ -143,7 +143,7 @@ function Content({ work }) {
                 <div className={`${portfolioStyles.backToTopPage}`}><a className={`mouseOverEfct`} href="/">{portfolio.labels.ToTopPage}</a></div>
             </div>
             <div id="footer">
-                <Footer />
+                <Footer currentLocale={locale} />
             </div>
         </>
     )
@@ -156,8 +156,6 @@ class Sections extends Component {
             loading: false,
         }
     }
-
-    
 
     componentDidMount() {
         setTimeout(() => this.setState({loading: true}), 2000)
@@ -193,20 +191,20 @@ function createDetailsArray (name) {
     const result = []
     switch (name) {
         case "THECOMPANY":
-            result.push(TheCompanyImg1)
-            result.push(TheCompanyImg2)
-            result.push(TheCompanyImg3)
-            result.push(TheCompanyImg4)
+            result.push("/img/portfolio/THECOMPANY/1.gif")
+            result.push("/img/portfolio/THECOMPANY/2.gif")
+            result.push("/img/portfolio/THECOMPANY/3.gif")
+            result.push("/img/portfolio/THECOMPANY/4.gif")
             break;
         case "BrandingCeed":
-            result.push(BrandingCeedImg1)
-            result.push(BrandingCeedImg2)
-            result.push(BrandingCeedImg3)
+            result.push("/img/portfolio/BrandingCeed/1.gif")
+            result.push("/img/portfolio/BrandingCeed/2.gif")
+            result.push("/img/portfolio/BrandingCeed/3.png")
             break;
         case "WakutoRecruit":
-            result.push(WakutoImg1)
-            result.push(WakutoImg2)
-            result.push(WakutoImg3)
+            result.push("/img/portfolio/WakutoRecruit/1.gif")
+            result.push("/img/portfolio/WakutoRecruit/2.gif")
+            result.push("/img/portfolio/WakutoRecruit/3.png")
             break;
         default:
             break;

@@ -49,7 +49,7 @@
             }
         },
         "works": {
-            "summary": "Ich arbeite hauptsächlich für Unternehmenswebsites. Hier sind einige aktuelle Arbeiten von meinen Entwicklungsprojekten. Bisher habe ich Websites mit Wordpress mit originellen/angepassten Vorlagen entwickelt. Und seit kurzem arbeite ich mit React/Next.js und es ist spannend für mich zu kodieren/programmieren. Bitte sehen Sie sich die Detailseiten an."
+            "summary": "Ich arbeite hauptsächlich für Unternehmenswebsite. Hier sind einige aktuelle Arbeiten von meinen Entwicklungsprojekten. Bisher habe ich Websites mit Wordpress mit originellen/angepassten Vorlagen entwickelt. Und seit kurzem arbeite ich mit React/Next.js und es ist spannend für mich zu kodieren/programmieren. Bitte sehen Sie sich die Detailseiten an."
         },
         "footer": {
             "moreinfo": "Mehr schauen",
@@ -75,7 +75,7 @@
             "Tools": "React.js, Next.js, Strapi, Swiper",
             "Release": "",
             "Summary": "THECOMPANY ist eine Tanzagentur mit Sitz in Berlin, die Tanztalente entwickelt und ausbildet, um anspruchsvolle Tanzperformances und Inhalte zu produzieren. Dieser Kunde hat mit anderen Künstlern und Marken zusammengearbeitet und hält auch Workshops und Kurse ab. Unser dreiköpfiges Team, bestehend aus Direktor, Designer und Entwickler (ich), hat ein sehr anspruchsvolles Design mit vielen Animations-Effekten, 'Apple-like' UI und Video-Inhalten erstellt, um die Kreativität dieses Kunden zu zeigen und mehr Personen anzuziehen, die hier Tanz trainieren, ein Talent in dieser Agentur finden und/oder mit THECOMPANY zusammenarbeiten wollen. Ich habe alles so weit wie möglich mit React/Next.js realisiert, um es als interaktive und qualitativ hochwertige Website darzustellen.",
-            "Link": "http://217.160.29.234:3000/",
+            "Link": "http://217.160.55.87:3000/",
             "Points": {
                 "first": "Kreative Animationen und Parallax-Effekte sowie eine Satzverfolgungsanimation mit IntersectionObserver",
                 "second": "Verbunden mit Shopify-API, um ein Einkaufserlebnis mit interaktiven Schiebereglern zu bieten.",

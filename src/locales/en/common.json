@@ -75,7 +75,7 @@
             "Tools": "React.js, Next.js, Strapi, Swiper",
             "Release": "",
             "Summary": "THECOMPANY is a dance agency based in Berlin to develop and train dance talent to produce superior dance paformances and content. This client has collaborated with other artists and brands, and also holds workshop events and classes. Our team by three members, director, designer and developer(me), has created a very sophisticated designs with a lot of animation effects, 'Apple-like' UI and video contents to show the creativity of this client and to attract more persons who want to train dance here, find a talent in this agency, and/or collaborate with THECOMPANY. I realized everything as much as highly possible by using React/Next.js to perform it as an interactive and high-quality website.",
-            "Link": "http://217.160.29.234:3000/",
+            "Link": "http://217.160.55.87:3000/",
             "Points": {
                 "first": "Creative animations and parallax effects and also a sentence tracking animation with IntersectionObserver.",
                 "second": "Connected with Shopify-API to provide a shopping experience with interactive sliders.",

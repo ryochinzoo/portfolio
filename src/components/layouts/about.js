@@ -5,11 +5,16 @@ import SkillsIcon from "../../img/SkillsIcon.png"
 import EducationIcon from "../../img/EducationIcon.png"
 import { useInView } from "react-intersection-observer"
 import { withNamespaces } from 'react-i18next'
+import { useMediaQuery } from 'react-responsive'
 
 function About ({ t }) {
+    const isDesktop = useMediaQuery({
+        query: '(min-width: 1024px)'
+    })
+    const aboutThreshold = isDesktop ? 0.8 : 0
     const { ref: headline, inView: headlineVisible } = useInView({threshold: 0.5, triggerOnce: true})
-    const { ref: profile, inView: profileVisible } = useInView({rootMargin: "-50px",threshold: 0.8, triggerOnce: true})
-    const { ref: skillEdu, inView: skillEduVisible } = useInView({rootMargin: "20px",threshold: 0.8, triggerOnce: true})
+    const { ref: profile, inView: profileVisible } = useInView({rootMargin: "-50px", threshold: aboutThreshold, triggerOnce: true})
+    const { ref: skillEdu, inView: skillEduVisible } = useInView({rootMargin: "20px", threshold: aboutThreshold, triggerOnce: true})
 
     //Skillsは2023年現在のデータ。毎年更新。
 

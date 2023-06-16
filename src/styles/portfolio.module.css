@@ -149,3 +149,64 @@
 .backToTopPage:hover {
     opacity: 0.7;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .pointListWrapper {
+        font-size: 24px;
+    }
+    .check {
+        font-size: 50px;
+    }
+    .overViewSummary {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .overViewFlexWrapper {
+        display: flex;
+        margin-bottom: 40px;
+        gap: 40px 0;
+        flex-direction: column;
+    }
+    .overViewContents {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pointListWrapper {
+        font-size: 18px;
+        gap: 0 30px;
+    }
+    .check {
+        font-size: 36px;
+    }
+    .overViewSummary {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .overViewFlexWrapper {
+        display: flex;
+        margin-bottom: 40px;
+        gap: 40px 0;
+        flex-direction: column;
+    }
+    .overViewContents {
+        width: 100%;
+    }
+    .mainTitle {
+        font-size: 48px;
+    }
+    .detailFlexWrapper, .detailFlexWrapperReverse {
+        padding: 0 3% 40px;
+        display: flex;
+        gap: 0 2%;
+        flex-direction: column-reverse;
+    }
+    .detailFlexWrapper div, .detailFlexWrapperReverse div {
+        width: 90%;
+        margin: 24px 0 12px;
+    }
+    .detailText {
+        font-size: 18px;
+        color: #707070;
+    }
+}

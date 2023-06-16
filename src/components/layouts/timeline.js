@@ -57,7 +57,7 @@ function Timeline ({ t }) {
                             <div className={`${timelineStyles.timelineHeadline} ${utilStyles.colorBlue}`}>{t("top.timeline.by18.title")}</div>
                             <div className={`${timelineStyles.timelineTitle}`}>{t("top.timeline.by18.category")}</div>
                             <div className={`${timelineStyles.timelineDescription}`}>
-                            {t("top.timeline.current.description")}</div>
+                            {t("top.timeline.by18.description")}</div>
                         </div>
                     </div>
                 </div>

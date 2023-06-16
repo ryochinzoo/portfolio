@@ -4,10 +4,6 @@ import WorksLink from '../ui/worksLink'
 import { useInView } from "react-intersection-observer"
 import { withNamespaces } from 'react-i18next'
 
-import THECOMPANY_ToolTip from "../../img/portfolio/THECOMPANY/tooltip.gif"
-import BrandingCeed_ToolTip from "../../img/portfolio/BrandingCeed/2.gif"
-import Wakuto_ToolTip from "../../img/portfolio/WakutoRecruit/2.gif"
-
 function Works({ t }) {
     const { ref: headline, inView: headlineVisible } = useInView({threshold: 0.5, triggerOnce: true})
     return (
@@ -18,9 +14,9 @@ function Works({ t }) {
                     {t("top.works.summary")}
                 </div>
                 <div className={`${worksStyles.linksWrapper}`}>
-                    <WorksLink name="THECOMPANY" link="/portfolio/THECOMPANY" dataSet="thecompany" tooltipImgPath={THECOMPANY_ToolTip} />
-                    <WorksLink name="Branding C°" link="/portfolio/BrandingCeed" dataSet="brandingceed" tooltipImgPath={BrandingCeed_ToolTip} />
-                    <WorksLink name="Wakuto - Recruit" link="/portfolio/WakutoRecruit" dataSet="wakutorec" tooltipImgPath={Wakuto_ToolTip} />
+                    <WorksLink name="THECOMPANY" link="/portfolio/THECOMPANY" dataSet="thecompany" tooltipImgPath="/img/portfolio/THECOMPANY/tooltip.gif" />
+                    <WorksLink name="Branding C°" link="/portfolio/BrandingCeed" dataSet="brandingceed" tooltipImgPath="/img/portfolio/BrandingCeed/2.gif" />
+                    <WorksLink name="Wakuto - Recruit" link="/portfolio/WakutoRecruit" dataSet="wakutorec" tooltipImgPath="/img/portfolio/WakutoRecruit/2.gif" />
                 </div>
             </div>
         </section>
